@@ -1,0 +1,149 @@
+header div.container.nav-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-wrapper,
+header nav,
+header .search-wrapper {
+    flex-grow: 1;
+}
+
+header .logo-wrapper a {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .logo-wrapper a span {
+    color: rgb(227, 212, 0);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li a {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-decoration: none;
+}
+
+header .search-wrapper {
+    text-align: end;
+    font-size: 25px;
+}
+
+header .search-wrapper i {
+    cursor: pointer;
+}
+
+header .banner-bg {
+    background-image: url('../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header .banner-bg div.container.banner {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+header .banner-bg div.container.banner h1 {
+    font-size: 92px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    margin-bottom: 70px;
+}
+
+header .banner-bg div.container.banner p {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    max-width: 40%;
+    /* Should be removed on lower screen*/
+    margin-bottom: 50px;
+}
+
+.mobile-nav {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.mobile-nav span {
+    background-color: black;
+    width: 50px;
+    height: 5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Large devices /desktop, laptop/ */
+@media screen and (max-width: 992px) {
+    header .banner-bg div.container.banner {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    header div.container.banner {
+        justify-content: center;
+        align-items: center;
+    }
+
+    header div.container.banner>div {
+        text-align: center;
+    }
+
+    header .search-wrapper,
+    header nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    header .banner-bg div.container.banner h1 {
+        font-size: 68px;
+    }
+
+    header .banner-bg div.container.banner p {
+        font-size: 20px;
+        max-width: unset;
+    }
+}
+
+/* Extra small devices /phone, smartwatch and other smart devices/ */
+@media screen and (max-width: 600px) {
+
+    header .search-wrapper,
+    header nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    header .logo-wrapper a {
+        font-size: 20px;
+    }
+
+    header .banner-bg div.container.banner h1 {
+        font-size: 46px;
+    }
+
+    header .banner-bg div.container.banner p {
+        font-size: 20px;
+        max-width: unset;
+    }
+}

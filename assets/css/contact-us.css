@@ -1,0 +1,81 @@
+#contact-us {
+    background-color: #ffd17e;
+}
+
+#contact-us .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-us h2 {
+    color: #21243d;
+    margin-bottom: 60px;
+}
+
+#contact-us p {
+    font-size: 30px;
+    color: #21243d;
+    font-weight: 400;
+    font-family: "Montserrat";
+    margin-bottom: 80px;
+}
+
+#contact-us form {
+    position: relative;
+    max-width: 70%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#contact-us form input {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 15px 200px 15px 25px;
+    border: none;
+    width: 100%;
+    font-size: 25px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Montserrat";
+    box-sizing: border-box;
+}
+
+#contact-us form input::placeholder {
+    color: rgba(0,0,0, 0.7)
+}
+
+#contact-us form input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: max-content;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 15px;
+    background-color: #21243d;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #contact-us h2 {
+        font-size: 45px;
+    }
+
+    #contact-us p {
+        font-size: 22px;
+    }
+
+    #contact-us form input {
+        font-size: 20px;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    #contact-us form input[type="submit"] {
+        position: static;
+        width: 100%;
+    }
+}
